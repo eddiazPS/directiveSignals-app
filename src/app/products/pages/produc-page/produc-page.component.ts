@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CustomLabelDirective } from '../../../shared/directives/custom-label.directive';
 
 @Component({
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule , CustomLabelDirective],
   templateUrl: './produc-page.component.html',
   styleUrl: './produc-page.component.css'
 })
